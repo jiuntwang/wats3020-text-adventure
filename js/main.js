@@ -8,7 +8,7 @@ let currentPage = null;
 ////////////////////////////////////////////////////////////////////////////////
 
 // Prompt the user for their name. Store the name in the variable `playerName`.
-playerName = prompt("What is your name?");
+playerName = prompt("Enter your player name.");
 
 
 // Accept one arameter, which is the `slug` for the current page and fetch the current page and return a page object using the `slug` value for a key.
@@ -57,26 +57,29 @@ function changePage(slug){
 ////////////////////////////////////////////////////////////////////////////////
 
 var storyData = {
-    title: "The Crow and the Fox",
+    title: "WATS Survival",
     p1: {
-        text: `You are a crow named ${playerName}. You are flying high above the
-                countryside. You see a farm off to the West, and your home forest
-                off to the East.`,
+        text: `You are a young and up and coming Web Developer named ${playerName}. Standing on a large seal on the ground, you look at your surroundings.`,
         choices: [
             {
-                text: `Fly over the farm to the West.`,
+                text: `You see a steep uphill path straight ahead.`,
                 link: 'p2'
             }, {
-                text: `Fly back home to your nest in the forest.`,
+                text: `To your right, you notice a holy light shining in the distance.`,
+                link: 'p3'
+            }, {
+                text: `To your left, a very long path, but the aroma of food drifts in the air.`,
+                link: 'p4'
+            }, {
+                text: `You decide to turn around from which you came.`,
                 link: 'homeEnd'
             }
         ]
     },
     homeEnd : {
-        text: `You return home to your comfy roost in the forest canopy and
-                enjoy a hot cup of tea!
+        text: `You walk aimlessly into a four way street, but was flamming eye from tower scares you back to the seal.
                 <br><br>
-                The End.`,
+                You recollect your thoughts.`,
         choices: [
             {
                 text: `Play again?`,
@@ -85,31 +88,26 @@ var storyData = {
         ]
     },
     p2 : {
-        text: `You fly over the Farm and see a piece of cheese lying on the
-                picnic table. There are no people around that you can see. The
-                cheese looks very tasty, but you are worried there might be a
-                person or, even worse, a CAT lurking somewhere you can't see.`,
+        text: `You walk briskly up the steep high to find yourself hearing a melody of music and water close by.`,
         choices: [
             {
-                text: `Go for the cheese!`,
-                link: 'p3'
+                text: `Check out the alluring sounds.`,
+                link: 'p5'
             }, {
-                text: `Decide it's not worth the risk and fly back to the forest.`,
-                link: 'homeEnd'
+                text: `You ignore the sounds, and continue walking straight uphill.`,
+                link: 'p6'
             }
         ]
     },
     p3 : {
-        text: `You swoop down and pluck the cheese from the table. Just as you
-                grab hold of the cheese, the farmer's cat leaps onto the table
-                ahead of you!`,
+        text: `The shining light beams bright as you approach a chapel named St. Ignatius. `,
         choices: [
             {
-                text: `Veer off to the left trying to avoid the cat.`,
-                link: 'basketEnd'
+                text: `Walk inside the chapel.`,
+                link: 'chapel'
             }, {
-                text: `Fly directly at the cat, full steam ahead!`,
-                link: 'p4'
+                text: `Ignore the chapel and adventure past it.`,
+                link: 'p7'
             }
         ]
     },
