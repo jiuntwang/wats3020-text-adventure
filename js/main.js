@@ -111,73 +111,53 @@ var storyData = {
             }
         ]
     },
-    basketEnd : {
-        text: `You fly directly into a picnic basket, which slams shut behind you.
-                You are stuck until some kind human comes to open the basket.
-                But at least the cat didn't eat you!
-                <br><br>
-                The End`,
-        choices: [
-            {
-                text: `Start over?`,
-                link: 'p1'
-            }
-        ]
-    },
     p4 : {
-        text: `You zoom towards the cat, who is surprised by the direct approach
-                and leaps off the table. You pull up sharply and make it over the
-                big oak tree to a safe cruising altitude. The sun is shining,
-                the wind is beneath your wings, and you have a beak full of
-                cheese.`,
+        text: `You drag your feet across the road with your nose pointed in the air as your stomach speaks of an unknown language.`,
         choices: [
             {
-                text: `Find somewhere nice to eat your cheese.`,
-                link: 'p5'
-            }
-        ]
-    },
-    p5 : {
-        text: `You find a secluded fence post in the middle of a large field
-                full of wildflowers. You decide this will be a wonderful place
-                to have a snack.
-                <br><br>
-                Just as you settle down you see Mr. Fox strolling down the path
-                towards your fence post.`,
-        choices: [
-            {
-                text: `Say, "Hello Mr. Fox! Join me for cheese."`,
-                link: 'shareCheese'
+                text: `Feeling lost, you continue to walk straight toward a gated entry.`,
+                link: 'info'
             }, {
-                text: `Keep a wary eye on Mr. Fox.`,
-                link: 'p6'
+                text: `Ignoring your stomach, your senses guide you to a hidden entry to the right where light flickers against the walls.`,
+                link: 'library'
             }
         ]
     },
-    shareCheese : {
-        text: `You hop down to the ground and Mr. Fox helps you break the cheese
-                in half. He is very grateful to you for sharing your cheese, and
-                he gives you a lovely ribbon for your nest.
-                <br><br>
-                The End`,
+    chapel : {
+        text: `A figure stands up from the pew, and turns to face you. He introduces you as Steven Holl.`,
         choices: [
             {
-                text: `Start over?`,
-                link: 'p1'
-            }
-        ]
-    },
-    p6 : {
-        text: `Mr. Fox approaches and says, "Hello ${playerName}! It's been so
-                long since we've seen each other. I've missed hearing your
-                lovely singing voice. Won't you sing me a tune before I go?`,
-        choices: [
-            {
-                text: `Sing a song for Mr. Fox.`,
-                link: 'dropCheeseEnd'
+                text: `Act suspicious and question him about what is he doing here.`,
+                link: 'suspicious'
             }, {
-                text: `Remain silent.`,
-                link: 'p7'
+                text: `"You're the architect!" You shout, a little louder than you anticpiated.`,
+                link: 'architect'
+            }
+        ]
+    },
+    suspicious : {
+        text: `Steven looks away in the distance and ignores you.
+                <br><br>
+                You feel that you have offended him.`,
+        choices: [
+            {
+                text: `Apologize to Steven.`,
+                link: 'architect'
+            }, {
+                text: `Leave the chapel.`
+                link: 'p3'
+            }
+        ]
+    },
+    architect : {
+        text: `He looks at you and says, "${playerName}! I've been waiting for you to fill these seven bottles with light.`,
+        choices: [
+            {
+                text: `Accept the quest.`,
+                link: 'accept'
+            }, {
+                text: `Decline the quest.`,
+                link: 'decline'
             }
         ]
     },
