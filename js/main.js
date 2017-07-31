@@ -76,10 +76,10 @@ var storyData = {
             }
         ]
     },
-    homeEnd : {
+    homeEnd: {
         text: `You walk aimlessly into a four way street, but was flamming eye from tower scares you back to the seal.
                 <br><br>
-                You recollect your thoughts.`,
+                You scratch your head, and recollect your thoughts.`,
         choices: [
             {
                 text: `Play again?`,
@@ -87,20 +87,35 @@ var storyData = {
             }
         ]
     },
-    p2 : {
-        text: `You walk briskly up the steep high to find yourself hearing a melody of music and water close by.`,
+    p2: {
+        text: `You walk briskly up the steep high to find yourself hearing a melody of music and water running close by.`,
         choices: [
             {
-                text: `Check out the alluring sounds.`,
+                text: `Check out the sounds that tempt your ears.`,
                 link: 'p5'
             }, {
-                text: `You ignore the sounds, and continue walking straight uphill.`,
+                text: `You ignore the random sounds, and continue to walk straight up the hill.`,
                 link: 'p6'
             }
         ]
     },
-    p3 : {
-        text: `The shining light beams bright as you approach a chapel named St. Ignatius. `,
+    p6: {
+        text: `Finally you've reached the peak of the hill only to find a blocked paths of fallen trees ahead of you and to the left.`,
+        choices: [
+            {
+                text: `Try to move the trees.`,
+                link: 'trees'
+            }, {
+                text: `Avoid the trees turn right doen a long abandoned path.`,
+                link: 'p8'
+            }, {
+                text: `Turn around and go back down the hill.`,
+                link: 'p2'
+            }
+        ]
+    },
+    p3: {
+        text: `A shining light beams bright over a chapel named St. Ignatius. `,
         choices: [
             {
                 text: `Walk inside the chapel.`,
@@ -108,10 +123,13 @@ var storyData = {
             }, {
                 text: `Ignore the chapel and adventure past it.`,
                 link: 'p7'
+            }, {
+                text: `You notice movement in the bushes to your left, and walks towards it.`,
+                link: 'doggo'
             }
         ]
     },
-    p4 : {
+    p4: {
         text: `You drag your feet across the road with your nose pointed in the air as your stomach speaks of an unknown language.`,
         choices: [
             {
@@ -123,7 +141,7 @@ var storyData = {
             }
         ]
     },
-    chapel : {
+    chapel: {
         text: `A figure stands up from the pew, and turns to face you. He introduces you as Steven Holl.`,
         choices: [
             {
@@ -135,7 +153,7 @@ var storyData = {
             }
         ]
     },
-    suspicious : {
+    suspicious: {
         text: `Steven looks away in the distance and ignores you.
                 <br><br>
                 You feel that you have offended him.`,
@@ -149,7 +167,7 @@ var storyData = {
             }
         ]
     },
-    architect : {
+    architect: {
         text: `He looks at you and says, "${playerName}! I've been waiting for you to fill these seven bottles with light.`,
         choices: [
             {
@@ -161,31 +179,31 @@ var storyData = {
             }
         ]
     },
-    dropCheeseEnd : {
-        text: `You open your beak to sing a lovely song, and your cheese comes
-                tumbling out. Mr. Fox quickly snaps the cheese out of the air
-                as it falls and gobbles it up!
+    doggo: {
+        text: `A large fuzzy doggo jump out from behind the bushes with a key in its mouth.
                 <br><br>
-                The End`,
+                You reach down to receive the key.`,
         choices: [
             {
-                text: `Start over?`,
-                link: 'p1'
+                text: `Pet the doggo.`,
+                link: 'pet'
+            }, {
+                text: `Walk out of the bushes.`,
+                link: 'walkOut'
             }
         ]
     },
-    p7 : {
-        text: `You remain silent through all of Mr. Fox's flattery. In the end,
-                he knows you won't fall for his tricks, and he leaves you alone.
+    pet: {
+        text: `You pet the doggo, and he wags his tail in happiness.
                 <br><br>
-                Finally able to relax in quiet, you enjoy your well-earned
-                cheese.
-                <br><br>
-                The End`,
+                You've gained a new party member named "Doggo"!`,
         choices: [
             {
-                text: `Play again?`,
-                link: 'p1'
+                text: `Walk out of the bushes with Doggo`,
+                link: 'walkDoggo'
+            }, {
+                text: `Tell Doggo to stay, and you walk out of the bushes`,
+                link: 'p3'
             }
         ]
     }
