@@ -58,7 +58,7 @@ function changePage(slug){
 
 var storyData = {
     title: "WATS Survival",
-    p1: {
+    p1 : {
         text: `You are a young and up and coming Web Developer named ${playerName}. Standing on a large seal on the ground, you look at your surroundings.`,
         choices: [
             {
@@ -76,7 +76,7 @@ var storyData = {
             }
         ]
     },
-    homeEnd: {
+    homeEnd : {
         text: `You walk aimlessly into a four way street, but was flamming eye from tower scares you back to the seal.
                 <br><br>
                 You scratch your head, and recollect your thoughts.`,
@@ -87,7 +87,7 @@ var storyData = {
             }
         ]
     },
-    p2: {
+    p2 : {
         text: `You walk briskly up the steep high to find yourself hearing a melody of music and water running close by.`,
         choices: [
             {
@@ -99,7 +99,7 @@ var storyData = {
             }
         ]
     },
-    p6: {
+    p6 : {
         text: `Finally you've reached the peak of the hill only to find a blocked paths of fallen trees ahead of you and to the left.`,
         choices: [
             {
@@ -114,7 +114,7 @@ var storyData = {
             }
         ]
     },
-    p3: {
+    p3 : {
         text: `A shining light beams bright over a chapel named St. Ignatius. `,
         choices: [
             {
@@ -129,7 +129,7 @@ var storyData = {
             }
         ]
     },
-    p4: {
+    p4 : {
         text: `You drag your feet across the road with your nose pointed in the air as your stomach speaks of an unknown language.`,
         choices: [
             {
@@ -141,7 +141,7 @@ var storyData = {
             }
         ]
     },
-    chapel: {
+    chapel : {
         text: `A figure stands up from the pew, and turns to face you. He introduces you as Steven Holl.`,
         choices: [
             {
@@ -153,7 +153,7 @@ var storyData = {
             }
         ]
     },
-    suspicious: {
+    suspicious : {
         text: `Steven looks away in the distance and ignores you.
                 <br><br>
                 You feel that you have offended him.`,
@@ -167,7 +167,7 @@ var storyData = {
             }
         ]
     },
-    architect: {
+    architect : {
         text: `He looks at you and says, "${playerName}! I've been waiting for you to fill these seven bottles with light.`,
         choices: [
             {
@@ -179,7 +179,7 @@ var storyData = {
             }
         ]
     },
-    doggo: {
+    doggo : {
         text: `A large fuzzy doggo jump out from behind the bushes with a key in its mouth.
                 <br><br>
                 You reach down to receive the key.`,
@@ -193,7 +193,7 @@ var storyData = {
             }
         ]
     },
-    pet: {
+    pet : {
         text: `You pet the doggo, and he wags his tail in happiness.
                 <br><br>
                 You've gained a new party member named "Doggo"!`,
